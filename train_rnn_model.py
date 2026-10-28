@@ -16,7 +16,7 @@ Veri Seti: IMDB veri seti: film yorumlari(olumlu ve olumsuz)
 plan:
 
 
-Kurulumlar:
+Gerekli kurulumlar:
 
 
 import libraries:
@@ -26,6 +26,14 @@ import libraries:
 
 #import libraries
 
+import numpy as np
+import nltk #natural tool kit
+import matplotlib.pyplot as plt #gorsellestirme
+from nltk.corpus import stopwords #gereksiz kelime listesi
+from tensorflow.keras.models import Sequential #base model
+from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
+from tensorflow.keras.datasets import imdb #veri seti
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 
